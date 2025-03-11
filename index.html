@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Signin</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }        
+        .signin{
+            font-family: "Big Shoulders", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <5px>;
+            font-style: normal;
+            margin: 100px 500px;
+            height: 550px;
+            width:270px;
+            background-image: url("img-1.jpg");
+            border-radius: 15% 0%;
+            padding: 20px 50px;
+            color: #fff;
+            background-position: relative;
+            /* Làm mờ nền */
+        }
+        input{
+            width: 100%;
+            height: 15px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 1px;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: small;
+            text-align: right; 
+            /* Thầy ơi cuwsuuuuuuuuu, em chưa align link được */
+            margin: 5px;
+            display: block;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+        button[type='submit']{
+            border: none;
+            width: 270px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: red;
+            color: #fff;
+        }
+        input[type='password']{
+            margin-bottom:10px ;
+        }
+        .otherwaystologin a{
+            margin-top: 20px;
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            background: #ffbe76;
+            border-radius: 50%;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            line-height: 35px;
+            transition: 1s;
+        }
+        .otherwaystologin a:hover{
+            background: #74b9ff;
+            color: #ffbe76;
+            transform: translateY(10px)
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="signin">
+        <h1>Logdy</h1>
+        <p>SIGN IN YOUR ACCOUNT</p>
+        <form>
+            <p>Email address</p>
+            <input type="text" placeholder="Email"><br>
+            <p>Password</p>
+            <input type="password" placeholder="Password"><br>
+            <a href="#">Forgot your password</a><br>
+            <button type="submit">SIGN IN</button>
+        </form>
+        <div class="otherwaystologin">
+            <span>Or login with</span>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
 </body>
 </html>
